@@ -101,7 +101,7 @@ int main(int argc, char **argv)
   init<<<grid,block>>>(rank,size,countHi,sendbuf,expected);
 
   if (rank == 0) {
-    printf("\n\n# Performance of MPI_Allreduce MPI_DOUBLE MPI_SUM with GPU buffers, %d tasks, %d iterations\n",size,iters);
+    printf("\n\n# Performance of MPI_Allreduce MPI_DOUBLE MPI_SUM with GPU buffers, %d tasks, %d iterations, counts %d to %d by halving\n",size,iters,countHi,countLo);
     printf("# count | GiB/rank (in+out) | seconds (min, avg, max) | GiB/s/rank (min, avg, max) | Total GF/s (min, avg, max)\n");
     fflush(stdout);
   }
