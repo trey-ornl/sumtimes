@@ -1,6 +1,6 @@
 #!/bin/bash
 #BSUB -alloc_flags smt1 
-#BSUB -W 5 
+#BSUB -W 7 
 #BSUB -J sumtimes
 
 source ./modules
